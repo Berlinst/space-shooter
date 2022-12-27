@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    font-family: "Prosto One";
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: cornflowerblue;
+}
+
+#main-play-area {
+    background-color: black;
+    background-image: url(img/space.png);
+    height: 600px;
+    width: 600px;
+}
+
+.divTitle{
+    margin-top: 1.5rem;
+    border: 1px black solid ;
+}
+
+.title{
+    color: white;
+    font-family: "Press Start 2P";
+}
+
+.game-instructions {
+    margin-top: 0px;
+    position: relative;
+    color: white;
+    padding-left: 110px;
+    font-size: 17px;
+    font-family: "Raleway";
+}
+
+.start-button {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    position: relative;
+    background-color: white;
+}
+
+.easy{
+    color: green;
+    cursor: pointer;
+}
+
+.medium{
+    color: rgb(228, 228, 0);
+    cursor: pointer;
+}
+
+.hard{
+    color: red;
+    cursor: pointer;
+}
+
+h1{
+    margin-left: 11.5rem;
+}
+
+.score{
+    font-size: 25px;
+    margin-top: 35rem;
+    background-color: white;
+    color: black;
+}
+
+.player-shooter {
+    position: relative;
+    height: 60px;
+    width: 70px;
+    left: 20px;
+    top: 250px
+}
+
+.laser {
+    position: relative;
+    width: 40px;
+    height: 30px;
+}
+
+.alien {
+    height: 60px;
+    width: 70px;
+    position: relative;
+}
+
+.alien-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-alien {
+    height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
+}
